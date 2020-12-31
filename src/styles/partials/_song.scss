@@ -4,9 +4,10 @@
     align-items: center;
     justify-content: center;
     min-height: 60vh;
-    img {
+    &__img {
         width: 20%;
-        border-radius: 50%;
+        border-radius: 50%;    
+        // mask-image: radial-gradient(5px at 50% 50%, transparent 100%, white 100%);
     }
     h2 {
         padding: 3rem 1rem 1rem 1rem;
@@ -14,6 +15,18 @@
     h3 {
     font-size: 1rem;
     }
+}
+
+.spin-record {
+    animation-name: spinrecord;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spinrecord {
+    from { transform: rotate(0deg) }
+    to { transform: rotate(360deg) }
 }
 
 @media screen and (max-width: 768px) {
