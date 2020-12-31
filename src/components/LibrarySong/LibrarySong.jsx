@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 function LibrarySong({ song, setCurrentSong, songs, audioRef, isPlaying, setSongs }) {
     // Event Handlers
-    const songSelectHandler = () => {
-        setCurrentSong(song);
+    const songSelectHandler = async () => {
+        await setCurrentSong(song);
         // Add Active State - If the id selected (song.id) matches
         // the id in the state object array of songs (item.id), set
         // the active state to true, otherwise set the active state 
@@ -18,14 +18,7 @@ function LibrarySong({ song, setCurrentSong, songs, audioRef, isPlaying, setSong
         // Update the state object array of songs
         setSongs(newSongs);
         // Check if the song is playing
-        if (isPlaying) {
-            const playPromise = audioRef.current.play();
-            if (playPromise !== undefined) {
-                playPromise.then((audio) => {
-                    audioRef.current.play();
-                })
-            }
-        }
+        if (isPlaying) audioRef.current.play();
     };
 
     return (
