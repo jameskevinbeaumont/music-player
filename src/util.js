@@ -3,13 +3,13 @@ import { v4 as uuidv4 } from 'uuid';
 function chillHop() {
     return [
         {
-            name: "Harvest",
-            artist: "Soul Food Horns, Blue Wednesday, G Mills",
-            cover: "https://cdn.shopify.com/s/files/1/2991/7958/products/VinylShot_Fall2020-Front_720x.jpg?v=1599132240",
+            name: "Sleepover",
+            artist: "Nymano, JK the Sage",
+            cover: "https://chillhop.com/wp-content/uploads/2020/09/09fb436604242df99f84b9f359acb046e40d2e9e-1024x1024.jpg",
             id: uuidv4(),
             active: true,
-            color: ["#B65156", "#E1B4BD"],
-            audio: "https://mp3.chillhop.com/serve.php/?mp3=9307"
+            color: ["#5A5380", "#1F1A1E"],
+            audio: "https://mp3.chillhop.com/serve.php/?mp3=10130"
         },
         {
             name: "Ocean Patio",
@@ -19,15 +19,6 @@ function chillHop() {
             active: false,
             color: ["#95C6D3", "#BA3C25"],
             audio: "https://mp3.chillhop.com/serve.php/?mp3=8036"
-        },
-        {
-            name: "Sleepover",
-            artist: "Nymano, JK the Sage",
-            cover: "https://chillhop.com/wp-content/uploads/2020/09/09fb436604242df99f84b9f359acb046e40d2e9e-1024x1024.jpg",
-            id: uuidv4(),
-            active: false,
-            color: ["#5A5380", "#1F1A1E"],
-            audio: "https://mp3.chillhop.com/serve.php/?mp3=10130"
         },
         {
             name: "Canary Forest",
@@ -64,6 +55,15 @@ function chillHop() {
             active: false,
             color: ["#4F575A", "#2A635E"],
             audio: "https://mp3.chillhop.com/serve.php/?mp3=9923"
+        },
+        {
+            name: "Harvest",
+            artist: "Soul Food Horns, Blue Wednesday, G Mills",
+            cover: "https://cdn.shopify.com/s/files/1/2991/7958/products/VinylShot_Fall2020-Front_720x.jpg?v=1599132240",
+            id: uuidv4(),
+            active: false,
+            color: ["#B65156", "#E1B4BD"],
+            audio: "https://mp3.chillhop.com/serve.php/?mp3=9307"
         },
         {
             name: "Witch Hat",
