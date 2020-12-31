@@ -6,8 +6,9 @@
     min-height: 60vh;
     &__img {
         width: 20%;
-        border-radius: 50%;    
-        // mask-image: radial-gradient(5px at 50% 50%, transparent 100%, white 100%);
+        border-radius: 50%;
+        border: .05rem solid black;   
+        mask-image: radial-gradient(3px at 50% 50%, transparent 100%, white 100%);
     }
     h2 {
         padding: 3rem 1rem 1rem 1rem;
@@ -19,7 +20,7 @@
 
 .spin-record {
     animation-name: spinrecord;
-    animation-duration: 3s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
