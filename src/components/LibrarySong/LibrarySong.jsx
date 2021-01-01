@@ -24,10 +24,10 @@ function LibrarySong({ song, setCurrentSong, songs, audioRef, isPlaying, setSong
     return (
         <div onClick={songSelectHandler}
             className={`library-song ${song.active ? 'selected' : ""}`}>
-            <img src={song.cover} alt={song.name}></img>
-            <div className="song-description">
-                <h3>{song.name}</h3>
-                <h4>{song.artist}</h4>
+            <img className="library-song__image" src={song.cover} alt={song.name}></img>
+            <div className="library-song__desc">
+                <h3 className="library-song__name">{song.name}</h3>
+                <h4 className="library-song__artist">{song.artist}</h4>
             </div>
         </div>
     )

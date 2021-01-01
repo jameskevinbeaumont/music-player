@@ -1,0 +1,30 @@
+// Breakpoint Variables
+$mobile-tablet-int-breakpoint: 532px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1200px;
+$desktop14-breakpoint: 1400px;
+
+  // Breakpoint Mixins
+@mixin mob-tab-int {
+    @media screen and (min-width: $mobile-tablet-int-breakpoint) {
+    @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: $tablet-breakpoint) {
+    @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+    }
+}
+
+@mixin desktop-14 {
+    @media only screen and (min-width: $desktop14-breakpoint) {
+    @content;
+    }
+}  

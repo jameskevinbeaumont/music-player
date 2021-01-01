@@ -39,9 +39,9 @@ function App() {
     })
   };
 
-  const activeLibraryHandler = (next) => {
+  const activeLibraryHandler = (nextSong) => {
     const newSongs = songs.map((song) => {
-      if (song.id === next.id) {
+      if (song.id === nextSong.id) {
         return { ...song, active: true };
       } else {
         return { ...song, active: false };
@@ -59,7 +59,7 @@ function App() {
   };
 
   return (
-    <div className={`App ${libraryStatus ? 'library-active' : ''}`}>
+    <div className={`app ${libraryStatus ? 'library-active' : ''}`}>
       <Nav
         libraryStatus={libraryStatus}
         setLibraryStatus={setLibraryStatus}
